@@ -98,7 +98,7 @@ int main(int argc,char *argv[])	//电机点位运动
                     cout<<"oh my god"<<endl;
 
             }
-                  cout <<"myrobot.SetExtDo():"<< myrobot.SetExtDo(4,1)<<endl;
+                cout <<"myrobot.SetExtDo():"<< myrobot.SetExtDo(4,1)<<endl;
         }
 
         if(lGpiValue& (1<<8))

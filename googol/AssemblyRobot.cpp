@@ -33,7 +33,7 @@ short AssemblyRobot::Initial(short coor)
         return lastRtnErr = RobotFailure;
     }
 
-    lastRtn = GT_LoadConfig("C:/Users/df/Desktop/Googol_fanuc/googol/GTS800.cfg");
+    lastRtn = GT_LoadConfig("./debug/GTS800.cfg");
     if (lastRtn)
     {
         printf("GT_LoadConfig():%d\n", lastRtn);
@@ -657,7 +657,7 @@ short AssemblyRobot::SetExtDo(short index, short value)
     if(lastRtn)
         return lastRtnErr = RobotFailure;
 
-    lastRtn = GT_LoadExtConfig("C:/Users/df/Desktop/Googol_fanuc/googol/ExtModule.cfg");
+    lastRtn = GT_LoadExtConfig("./debug/ExtModule.cfg");
     if(lastRtn)
         return lastRtnErr = RobotFailure;
 

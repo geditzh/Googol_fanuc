@@ -1,40 +1,17 @@
-#include <QApplication>
-#include <QDebug>
-#include "mainwindow.h"
+#include <QCoreApplication>
 #include "AssemblyRobot.h"
 #include <windows.h>
+#include <iostream>
+#include <fstream>
+#include <vector>
+#include  <QFile>
 #include "gts.h"
+using namespace std;
 
-//int main(int argc, char *argv[])    //正逆解测试
-//{
-//    QApplication a(argc, argv);
-//    MainWindow w;
-
-//    int i, j, c;
-//    cout.setf(ios::fixed);
-//    cout.precision(16);
-
-//    AssemblyRobot myrobot;
-
-//    double ang1[3] = {0,-10,0};
-//    double pos1[3];
-//    for (i = 0; i < 3; i++)
-//    {
-//        cout << ang1[i] << endl;
-//    }
-//    myrobot.InverseKinematics(ang1, pos1);
-//    for (i = 0; i < 3; i++)
-//    {
-//        cout << pos1[i] << endl;
-//    }
-
-//    w.show();
-
-//    return a.exec();
-//}
-
-int main(int argc,char *argv[])	//电机点位运动
+int main(int argc,char *argv[])	//协调运动
 {
+    QCoreApplication e(argc, argv);
+
     AssemblyRobot myrobot;
     short count,flag=1;
     long lGpiValue;
@@ -109,6 +86,5 @@ int main(int argc,char *argv[])	//电机点位运动
 
     cout <<"myrobot.Close():"<< myrobot.Close()<<endl;
 
-    return 0;
+    return e.exec();
 }
-

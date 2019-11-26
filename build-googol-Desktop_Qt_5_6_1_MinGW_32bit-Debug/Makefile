@@ -175,6 +175,7 @@ Makefile: ../googol/googol.pro D:/qt/5.6/mingw49_32/mkspecs/win32-g++/qmake.conf
 		D:/qt/5.6/mingw49_32/mkspecs/features/resolve_config.prf \
 		D:/qt/5.6/mingw49_32/mkspecs/features/exclusive_builds_post.prf \
 		D:/qt/5.6/mingw49_32/mkspecs/features/default_post.prf \
+		D:/qt/5.6/mingw49_32/mkspecs/features/win32/console.prf \
 		D:/qt/5.6/mingw49_32/mkspecs/features/qml_debug.prf \
 		D:/qt/5.6/mingw49_32/mkspecs/features/win32/rtti.prf \
 		D:/qt/5.6/mingw49_32/mkspecs/features/precompile_header.prf \
@@ -182,18 +183,12 @@ Makefile: ../googol/googol.pro D:/qt/5.6/mingw49_32/mkspecs/win32-g++/qmake.conf
 		D:/qt/5.6/mingw49_32/mkspecs/features/qt.prf \
 		D:/qt/5.6/mingw49_32/mkspecs/features/resources.prf \
 		D:/qt/5.6/mingw49_32/mkspecs/features/moc.prf \
-		D:/qt/5.6/mingw49_32/mkspecs/features/win32/opengl.prf \
-		D:/qt/5.6/mingw49_32/mkspecs/features/uic.prf \
 		D:/qt/5.6/mingw49_32/mkspecs/features/file_copies.prf \
-		D:/qt/5.6/mingw49_32/mkspecs/features/win32/windows.prf \
 		D:/qt/5.6/mingw49_32/mkspecs/features/testcase_targets.prf \
 		D:/qt/5.6/mingw49_32/mkspecs/features/exceptions.prf \
 		D:/qt/5.6/mingw49_32/mkspecs/features/yacc.prf \
 		D:/qt/5.6/mingw49_32/mkspecs/features/lex.prf \
 		../googol/googol.pro \
-		D:/qt/5.6/mingw49_32/lib/qtmaind.prl \
-		D:/qt/5.6/mingw49_32/lib/Qt5Widgets.prl \
-		D:/qt/5.6/mingw49_32/lib/Qt5Gui.prl \
 		D:/qt/5.6/mingw49_32/lib/Qt5Core.prl
 	$(QMAKE) -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" -o Makefile ..\googol\googol.pro
 D:/qt/5.6/mingw49_32/mkspecs/features/spec_pre.prf:
@@ -312,6 +307,7 @@ D:/qt/5.6/mingw49_32/mkspecs/features/win32/default_pre.prf:
 D:/qt/5.6/mingw49_32/mkspecs/features/resolve_config.prf:
 D:/qt/5.6/mingw49_32/mkspecs/features/exclusive_builds_post.prf:
 D:/qt/5.6/mingw49_32/mkspecs/features/default_post.prf:
+D:/qt/5.6/mingw49_32/mkspecs/features/win32/console.prf:
 D:/qt/5.6/mingw49_32/mkspecs/features/qml_debug.prf:
 D:/qt/5.6/mingw49_32/mkspecs/features/win32/rtti.prf:
 D:/qt/5.6/mingw49_32/mkspecs/features/precompile_header.prf:
@@ -319,18 +315,12 @@ D:/qt/5.6/mingw49_32/mkspecs/features/warn_on.prf:
 D:/qt/5.6/mingw49_32/mkspecs/features/qt.prf:
 D:/qt/5.6/mingw49_32/mkspecs/features/resources.prf:
 D:/qt/5.6/mingw49_32/mkspecs/features/moc.prf:
-D:/qt/5.6/mingw49_32/mkspecs/features/win32/opengl.prf:
-D:/qt/5.6/mingw49_32/mkspecs/features/uic.prf:
 D:/qt/5.6/mingw49_32/mkspecs/features/file_copies.prf:
-D:/qt/5.6/mingw49_32/mkspecs/features/win32/windows.prf:
 D:/qt/5.6/mingw49_32/mkspecs/features/testcase_targets.prf:
 D:/qt/5.6/mingw49_32/mkspecs/features/exceptions.prf:
 D:/qt/5.6/mingw49_32/mkspecs/features/yacc.prf:
 D:/qt/5.6/mingw49_32/mkspecs/features/lex.prf:
 ../googol/googol.pro:
-D:/qt/5.6/mingw49_32/lib/qtmaind.prl:
-D:/qt/5.6/mingw49_32/lib/Qt5Widgets.prl:
-D:/qt/5.6/mingw49_32/lib/Qt5Gui.prl:
 D:/qt/5.6/mingw49_32/lib/Qt5Core.prl:
 qmake: FORCE
 	@$(QMAKE) -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" -o Makefile ..\googol\googol.pro
